@@ -37,7 +37,7 @@ Type: `string`
 
 String with data-uri encoded in base64.
 
-### toFile(input).stream()
+### toFile.stream()
 
 Stream supportable interface.
 
