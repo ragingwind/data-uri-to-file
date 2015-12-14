@@ -1,0 +1,49 @@
+{
+  "name": "base64-to-image",
+  "version": "0.0.0",
+  "description": "My doozie module",
+  "license": "MIT",
+  "repository": "ragingwind/base64-to-image",
+  "author": {
+    "name": "ragingwind",
+    "email": "ragingwind@gmail.com",
+    "url": "ragingwind.me"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "scripts": {
+    "build": "babel src/index.js -o index.js --presets es2015",
+    "test": "npm run build && xo && ava",
+    "test-with-no-build": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "base64",
+    "converter",
+    "base64-to-image"
+  ],
+  "dependencies": {
+    "image-type": "^2.1.0",
+    "mime": "^1.3.4",
+    "pify": "^2.3.0",
+    "pinkie-promise": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "ava": "^0.3.0",
+    "xo": "^0.10.0"
+  },
+  "xo": {
+    "ignores": [
+      "test.js"
+    ]
+  },
+  "jshintConfig": {
+    "esnext": true,
+    "node": true
+  }
+}
