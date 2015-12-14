@@ -1,9 +1,9 @@
 {
-  "name": "base64-to-image",
+  "name": "datauri-to-file",
   "version": "0.1.0",
-  "description": "My doozie module",
+  "description": "data-uri encoded in base64 to file or stream",
   "license": "MIT",
-  "repository": "ragingwind/base64-to-image",
+  "repository": "ragingwind/datauri-to-file",
   "author": {
     "name": "ragingwind",
     "email": "ragingwind@gmail.com",
@@ -21,9 +21,11 @@
     "index.js"
   ],
   "keywords": [
+    "data-uri",
     "base64",
     "converter",
-    "base64-to-image"
+    "datauri-to-file",
+    "stream"
   ],
   "dependencies": {
     "image-type": "^2.1.0",
