@@ -1,6 +1,6 @@
 {
   "name": "base64-to-image",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "My doozie module",
   "license": "MIT",
   "repository": "ragingwind/base64-to-image",
