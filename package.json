@@ -1,9 +1,9 @@
 {
-  "name": "datauri-to-file",
+  "name": "data-uri-to-file",
   "version": "0.1.2",
   "description": "data-uri encoded in base64 to file or stream",
   "license": "MIT",
-  "repository": "ragingwind/datauri-to-file",
+  "repository": "ragingwind/data-uri-to-file",
   "author": {
     "name": "ragingwind",
     "email": "ragingwind@gmail.com",
@@ -22,14 +22,14 @@
   ],
   "keywords": [
     "data-uri",
+    "data-uri-to-file",
     "base64",
     "converter",
-    "datauri-to-file",
     "stream"
   ],
   "dependencies": {
+    "data-uri-regex": "^0.1.2",
     "mime": "^1.3.4",
-    "parse-data-uri": "^0.2.0",
     "through2": "^2.0.0"
   },
   "devDependencies": {

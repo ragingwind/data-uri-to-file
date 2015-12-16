@@ -1,4 +1,4 @@
-# datauri-to-file [![Build Status](https://travis-ci.org/ragingwind/datauri-to-file.svg?branch=master)](https://travis-ci.org/ragingwind/datauri-to-file)
+# data-uri-to-file [![Build Status](https://travis-ci.org/ragingwind/data-uri-to-file.svg?branch=master)](https://travis-ci.org/ragingwind/data-uri-to-file)
 
 > data-uri encoded in base64 to file or stream
 
@@ -6,19 +6,19 @@
 ## Install
 
 ```
-$ npm install --save datauri-to-file
+$ npm install --save data-uri-to-file
 ```
 
 
 ## Usage
 
 ```js
-const toFile = require('datauri-to-file');
-const dataUri = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iIAogICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIKICAgICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICA8ZGVzYz5tZW51PC9kZXNjPgogIDxnIGlkPSJtZW51Ij48cGF0aCBkPSJNMywxOGgxOHYtMkgzVjE4eiBNMywxM2gxOHYtMkgzVjEzeiBNMyw2djJoMThWNkgzeiIvPjwvZz4KPC9zdmc+Cgo=';
+const toFile = require('data-uri-to-file');
+const dataUri = 'data:image/svg+xml;base64,PD94bWwgdmVy ... URPQ1RZUEUgc3ZnIFB4KPC9zdmc+Cgo=';
 
 // promise style
-toFile(dataUri).then(image => {
-	console.log(image.mimeType, image.data, image.extension);
+toFile(dataUri).then(file => {
+	console.log(file.mimeType, file.data, file.extension);
 });
 
 // stream style

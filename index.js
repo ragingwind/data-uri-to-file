@@ -1,8 +1,8 @@
 'use strict';
 
-var _parseDataUri = require('parse-data-uri');
+var _dataUriRegex = require('data-uri-regex');
 
-var _parseDataUri2 = _interopRequireDefault(_parseDataUri);
+var _dataUriRegex2 = _interopRequireDefault(_dataUriRegex);
 
 var _mime = require('mime');
 
@@ -17,17 +17,19 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function toFile(input) {
 	return new Promise(function (resolve, reject) {
 		if (typeof input !== 'string') {
-			return reject(new TypeError('Input should be string for path or base64'));
+			return reject(new TypeError('Input should be string as base64'));
 		}
 
-		var image = (0, _parseDataUri2.default)(input);
-		image.extension = _mime2.default.extension(image.mimeType);
+		var data = (0, _dataUriRegex2.default)().exec(input);
 
-		console.log(image);
-		return resolve(image);
+		return resolve(data ? {
+			mimeType: data[2],
+			encoding: data[3],
+			data: new Buffer(data[4]),
+			extension: _mime2.default.extension(data[2])
+		} : undefined);
 	});
 }
-// import duplexify from 'duplexify';
 
 module.exports = toFile;
 
