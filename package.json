@@ -13,7 +13,7 @@
     "node": ">=0.12.0"
   },
   "scripts": {
-    "build": "babel src/index.js -o index.js --presets es2015",
+    "build": "babel src --out-dir ./ --presets es2015",
     "test": "npm run build && xo && ava",
     "test-with-no-build": "xo && ava"
   },
