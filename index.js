@@ -25,7 +25,7 @@ function toFile(input) {
 		return resolve(data ? {
 			mimeType: data[2],
 			encoding: data[3],
-			data: new Buffer(data[4]),
+			data: new Buffer(data[4], encoding),
 			extension: _mime2.default.extension(data[2])
 		} : undefined);
 	});
