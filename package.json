@@ -13,9 +13,7 @@
     "node": "> 5"
   },
   "scripts": {
-    "build": "babel src --out-dir ./ --presets es2015",
-    "test": "npm run build && xo && ava",
-    "test-with-no-build": "xo && ava"
+    "test": "xo && ava"
   },
   "files": [
     "index.js"
@@ -33,18 +31,7 @@
     "through2": "^2.0.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.10.1",
-    "babel-preset-es2015": "^6.9.0",
     "ava": "^0.15.2",
     "xo": "^0.16.0"
-  },
-  "xo": {
-    "ignores": [
-      "test.js"
-    ]
-  },
-  "jshintConfig": {
-    "esnext": true,
-    "node": true
   }
 }
