@@ -1,6 +1,6 @@
 {
   "name": "data-uri-to-file",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "data-uri encoded in base64 to file or stream",
   "license": "MIT",
   "repository": "ragingwind/data-uri-to-file",
