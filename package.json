@@ -10,7 +10,7 @@
     "url": "ragingwind.me"
   },
   "engines": {
-    "node": "> 5"
+    "node": ">= 5"
   },
   "scripts": {
     "test": "xo && ava"
